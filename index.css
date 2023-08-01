@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Figtree', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #caf4e0;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.container {
+    /* height: fit-content; */
+    /* width: 100%; */
+}
+
+.homepage {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    background-color: #4230dd;
+    overflow: hidden;
+    height: 4rem;
+    width: 100%;
+    padding: 3.8vw 13.5vw;
+}
+
+.nav_logo img {
+    height: 4.6vh;
+    opacity: .95;
+    padding-right: 6.5vw;
+}
+
+.nav_elem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.2rem;
+    text-transform: uppercase;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown_elem {
+    display: none;
+    position: absolute;
+    padding: 1.1rem 0;
+    margin: 0;
+    width: 12rem;
+    overflow: auto;
+    color: #fff;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+}
+
+.dropdown:hover .dropdown_elem {
+    display: block;
+}
+
+.dropdown_elem a {
+    display: block;
+    color: #FFFFFF;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.dropdown_elem a:hover {
+    color: #dddddd;
+}
+
+.dropdown a i {
+    padding: .8rem 0 0.8rem 1rem;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#btn {
+    background-color: #caf4e0;
+    padding: 22px 32px;
+    transition: all .2s;
+    box-shadow: 6px 6px #1c1279;
+    display: block;
+    border-radius: 10px;
+    color: #4230dd;
+    font-weight: 800;
+}
+
+#download {
+    background-color: #caf4e0;
+    padding: 14px 24px;
+    transition: all .2s;
+    display: block;
+    border-radius: 5px;
+    color: #4230dd;
+    font-weight: 800;
+    display: none;
+    font-size: 17px;
+}
+
+#btn:hover {
+    box-shadow: none;
+    transform: translate(8px, 8px);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#hamburgar {
+    font-size: 22px;
+    display: none;
+    padding-right: 20px;
+}
+
+.main {
+    background: url("hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.info {
+    padding: 7.5vw 0 0 9.5vw;
+    width: 50vw;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 4.8rem;
+    word-wrap: wrap;
+}
+
+.para {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7rem;
+    word-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.buttons img {
+    height: 2.5rem;
+}
+
+.buttons a {
+    color: #caf4e0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.buttons i {
+    font-size: 14px;
+}
+
+.ham {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#link1 {
+    display: none;
+}
+
+/* Second page starts */
+
+.second_page {
+    height: 100%;
+    width: 100%;
+    background-color: #4230dd;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .navbar {
+        padding: 40px 60px;
+    }
+
+    .info {
+        padding: 80px 90px;
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 40px 30px;
+    }
+
+    .info {
+        padding: 40px 50px;
+        width: 700px;
+    }
+
+    .nav_elem {
+        gap: .9rem;
+    }
+
+    #btn {
+        padding: 12px 20px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .nav_elem {
+        display: none;
+        gap: 1.4rem;
+    }
+
+    #hamburgar,
+    #download {
+        display: block;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .dropdown a i {
+        padding: .8rem 0;
+    }
+
+    .heading h1 {
+        font-size: 50px;
+        width: 500px;
+        line-height: 3.8rem;
+    }
+
+    .para p {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.5rem;
+        word-wrap: wrap;
+        margin: 1rem 0;
+    }
+
+    .main {
+        background: url("hero2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 80% 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .info {
+        padding: 100px 16px;
+        width: 400px;
+    }
+
+    .navbar {
+        padding: 1.2rem .8rem;
+    }
+
+    .nav_logo img {
+        height: 2.8vh;
+        padding-right: 1.2vw;
+    }
+
+    .heading h1 {
+        font-size: 33px;
+        width: 350px;
+        line-height: 2.4rem;
+        font-weight: 800;
+    }
+    .para {
+        margin: 0;
+    }
+
+    #download {
+        padding: 10px;
+        font-weight: 800;
+    }
+    .para p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.4rem;
+        width: 350px;
+    }
+    .buttons a{
+        display: none;
+    }
+    #link a {
+        display: none;
+    }
+    a {
+        display: block;
+        padding: .6rem 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heading h1{
+        font-size: 35px;
+        line-height: 2.5rem;
+        font-weight: 800;
+    }
+    .info {
+        padding: 85px 16px;
+        width: 350px;
+    }
+    .para p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.4rem;
+        width: 300px;
+    }
+}
