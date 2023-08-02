@@ -204,25 +204,39 @@ a:hover {
 }
 
 /* Media Queries for Responsiveness */
+@media screen and (max-width: 1550px) {
+    .heading {
+        font-size: 34px;
+    }
+
+}
+
 @media screen and (max-width: 1440px) {
     .navbar {
         padding: 40px 60px;
     }
 
     .info {
-        padding: 80px 90px;
+        padding: 80px 85px;
         width: 800px;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1261px) {
     .navbar {
         padding: 40px 30px;
     }
 
     .info {
-        padding: 40px 50px;
+        padding: 45px 0px 40px 30px;
         width: 700px;
+    }
+
+    .para p {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.5rem;
+        width: 560px;
     }
 
     .nav_elem {
@@ -235,7 +249,11 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1065px) {
+    .navbar {
+        padding: 1.4rem 1rem;
+    }
+
     .nav_elem {
         display: none;
         gap: 1.4rem;
@@ -247,6 +265,7 @@ a:hover {
     }
 
     .info {
+        padding: 65px 40px 0 40px;
         width: 100%;
     }
 
@@ -265,7 +284,7 @@ a:hover {
         font-weight: 500;
         line-height: 1.5rem;
         word-wrap: wrap;
-        margin: 1rem 0;
+        margin: .8rem 0;
     }
 
     .main {
@@ -276,15 +295,15 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
 
     .info {
-        padding: 100px 16px;
-        width: 400px;
+        padding: 75px 35px;
+        width: 450px;
     }
 
     .navbar {
-        padding: 1.2rem .8rem;
+        padding: 1.4rem .8rem;
     }
 
     .nav_logo img {
@@ -293,11 +312,12 @@ a:hover {
     }
 
     .heading h1 {
-        font-size: 33px;
-        width: 350px;
-        line-height: 2.4rem;
+        font-size: 40px;
+        width: 450px;
+        line-height: 2.5rem;
         font-weight: 800;
     }
+
     .para {
         margin: 0;
     }
@@ -306,38 +326,79 @@ a:hover {
         padding: 10px;
         font-weight: 800;
     }
+
     .para p {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
-        line-height: 1.4rem;
-        width: 350px;
+        line-height: 1.5rem;
+        width: 400px;
     }
-    .buttons a{
+
+    .buttons {
+        padding-top: 5px;
+    }
+
+    .buttons a {
         display: none;
     }
+
     #link a {
         display: none;
     }
+
     a {
         display: block;
         padding: .6rem 0;
     }
 }
 
-@media screen and (max-width: 375px) {
-    .heading h1{
+@media screen and (max-width: 450px) {
+    .navbar {
+        padding: 1.3rem .3rem;
+    }
+    .heading h1 {
         font-size: 35px;
         line-height: 2.5rem;
         font-weight: 800;
     }
+
     .info {
-        padding: 85px 16px;
+        padding: 85px 25px;
         width: 350px;
     }
+
     .para p {
         font-size: 15px;
         font-weight: 500;
         line-height: 1.4rem;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .heading h1 {
+        font-size: 32px;
+        line-height: 2.5rem;
+        font-weight: 800;
         width: 300px;
+    }
+
+    .info {
+        padding: 60px 15px;
+        width: 350px;
+    }
+
+    .para p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.3rem;
+        width: 280px;
+    }
+    .ham {
+        gap: 8px;
+        margin-right: -8px;
+    }
+    .buttons {
+        padding-top: 0px;
     }
 }
