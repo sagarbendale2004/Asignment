@@ -204,11 +204,19 @@ a:hover {
 }
 
 /* Media Queries for Responsiveness */
-@media screen and (max-width: 1550px) {
-    .heading {
-        font-size: 34px;
+@media screen and (max-width: 1600px) {
+    .heading h1{
+        font-size: 60px;
+        width: 750px;
+    }
+    .navbar {
+        padding: 40px 60px;
     }
 
+    .info {
+        padding: 80px 85px;
+        width: 800px;
+    }
 }
 
 @media screen and (max-width: 1440px) {
