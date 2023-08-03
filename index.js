@@ -1,10 +1,13 @@
-function myfun() {
-    var navbar = document.getElementById("navbar");
-    var info = document.getElementById("info");
+function myFunction() {
+    var x = document.getElementById("nav_elem");
+    var hamburgerIcon = document.getElementById("hamburgar");
 
-    if (screen.width > 1400) {
-        navbar.style.paddingLeft = "60px 80px"
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        hamburgerIcon.classList.remove("fa-times");
+    } else {
+        x.style.display = "block";
+        hamburgerIcon.classList.add("fa-times");
     }
 }
 
-myfun();
